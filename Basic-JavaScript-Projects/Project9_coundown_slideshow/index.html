@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet"  type="text/css" href="CSS/main.css">
+    </head>
+
+    <body>
+
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Click Here!</button>
+        <p id="timer"></p>
+
+        <!--Slideshow Container-->
+        <div class="slideshow-container">
+
+            <!-- images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 7</div>
+              <img src="Images/barbatos1.jpg" width="300" height="500">
+              <div class="text">Unpainted Inner Frame</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 7</div>
+              <img src="Images/barbatos2.jpg" width="300" height="500">
+              <div class="text">Leg 1</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 7</div>
+              <img src="Images/barbatos3.jpg" width="300" height="500">
+              <div class="text">Leg 2</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="Images/barbatos4.jpg" width="300" height="500">
+                <div class="text">Legs and Waist</div>
+              </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="Images/barbatos5.jpg" width="300" height="500">
+                <div class="text">Legs and Waist 2</div>
+            </div> 
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="Images/barbatos6.jpg" width="300" height="500">
+                <div class="text">Torso and Neck</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="Images/barbatos7.jpg" width="300" height="500">
+                <div class="text">Legs, Waste and Torso</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+          </div>
+
+        <script src="JS/main.js"></script>
+    </body>
+</html>
