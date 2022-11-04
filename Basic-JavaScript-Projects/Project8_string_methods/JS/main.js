@@ -17,3 +17,20 @@ function slice_Method() {
 let text = "I'm falling asleep"
 let result = text.toUpperCase();
 document.getElementById("upper case");
+
+function string_Method() {
+    var X =182;
+    document.getElementById("Numbers_to_string").innerHTML = X.toString();
+}
+
+
+function precision_Method() {
+    var X = 3.141592653589793238;
+    document.getElementById("Precision").innerHTML = X.toPrecision(4);
+}
+
+
+function toFixed_Method() {
+    var X = 9.3333
+    document.getElementById("Fixed").innerHTML = X.toFixed(2)
+}
