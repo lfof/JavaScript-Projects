@@ -78,13 +78,13 @@ function checkWinConditions() {
     // X 0, 3, 6 conditions.
     else if (arrayIncludes('0X', '3X', '6X')) { drawWinLine (100, 50, 100, 558)}
     // X 1, 4, 7 conditions.
-    else if (arrayIncludes('1x', '4x', '7x')) { drawWinLine (304, 50, 304, 558)}
+    else if (arrayIncludes('1X', '4X', '7X')) { drawWinLine (304, 50, 304, 558)}
     // X 2, 5, 8 conditions.
     else if (arrayIncludes('2X', '5X', '8X')) { drawWinLine (508, 50, 508, 558)}
     // X 6, 4, 2 conditions.
     else if (arrayIncludes('6X', '4X', '2X')) { drawWinLine (100, 508, 510, 90)}
     // X 0, 4, 8 conditions.
-    else if (arrayIncludes('0X', '4x', '8x')) { drawWinLine (100, 100, 520, 520)} 
+    else if (arrayIncludes('0X', '4X', '8x')) { drawWinLine (100, 100, 520, 520)} 
     // O 0, 1, 2 conditions.
     else if (arrayIncludes('0O', '1O', '2O')) { drawWinLine (50, 100, 558, 100)}
     // O 3, 4, 5 conditions.
@@ -178,9 +178,9 @@ function checkWinConditions() {
         //this condition checks if we've reached the endpoints.
         if (x1 <= x2 && y1 <= y2) {
             //This condition adds 10 to the prevoius end x endpoint.
-            if (x < x2) { x += 10;}
+            if (x < x2) { x += 10; }
             //this condition adds 10 to the previous end y endpoint.
-            if (y < y2) { y += 10;}
+            if (y < y2) { y += 10; }
             //This condition is similar to the one above.
             //this is necessary for the 6, 4, 2 win conditions.
             if (x >= x2 && y >= y2) { cancelAnimationFrame(animationLoop); }
@@ -215,7 +215,7 @@ function checkWinConditions() {
  //This funcion resets the game in the event of a tie or a win.
  function resetGame() {
     //this for loop iterates through each HTMO square element.
-    for (let i = 0; 1 < 9; i++) {
+    for (let i = 0; i < 9; i++) {
         //This variable gets the HTML element i.
         let square = document.getElementById(String(i));
         //This removes our elements backgroundImage.
